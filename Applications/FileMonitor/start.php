@@ -11,9 +11,9 @@ $worker->name = 'FileMonitor';
 $worker->reloadable = false;
 $last_mtime = time();
 
-$worker->onWorkerStart = function()
+$worker->onWorkerStart = function() use（$monitor_dir）
 {
-    global $monitor_dir;
+//     global $monitor_dir;
     // watch files only in daemon mode
     if(!Worker::$daemonize)
     {
