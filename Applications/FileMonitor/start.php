@@ -1,6 +1,6 @@
 <?php
 use Workerman\Worker;
-use Workerman\Lib\Timer;
+use Workerman\Timer;
 
 // watch Applications catalogue
 $monitor_dir = realpath(__DIR__.'/..');
