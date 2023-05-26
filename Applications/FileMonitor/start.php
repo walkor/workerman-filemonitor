@@ -14,7 +14,7 @@ $last_mtime = time();
 $worker->onWorkerStart = function() use ($monitor_dir)
 {
 //     global $monitor_dir;
-    // watch files only in daemon mode
+    // watch files only in debug mode
     if(!Worker::$daemonize)
     {
         // chek mtime of files per second 
